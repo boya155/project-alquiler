@@ -1,7 +1,23 @@
-<header>
+---
+import LoginIcon from "../../src/icons/LoginIcon.astro";
+import Container from "../layouts/Container.astro";
+---
+
+<Container>
+  <header class="flex justify-between items-center mt-3">
     <div>
-        
+      <a href="/">
+        <img src="logo.webp" alt="logo" width="90px" class="rounded-lg" />
+      </a>
     </div>
-    <div></div>
-    <div></div>
-</header>
+    <div class="flex gap-3">
+      <a class="text-xl" href="servicios">Sericios</a>
+      <a class="text-xl"  href="nosotros">Nosotros</a>
+      <a class="text-xl"  href="contacto">Contacto</a>
+    </div>
+    <div class="flex gap-1 p-2 bg-gray-100 rounded-lg hover:bg-gray-200">
+      <LoginIcon />
+      Login
+    </div>
+  </header>
+</Container>
