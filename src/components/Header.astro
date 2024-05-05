@@ -4,20 +4,28 @@ import Container from "../layouts/Container.astro";
 ---
 
 <Container>
-  <header class="flex justify-between items-center mt-3">
+  <nav class="flex justify-between items-center">
     <div>
-      <a href="/">
-        <img src="logo.webp" alt="logo" width="90px" class="rounded-lg" />
+      <a href="/" class="flex items-center gap-2">
+        <img
+          src="logo.webp"
+          alt="logo empresa"
+          width="90px"
+          class="rounded-lg"
+        />
+        <p class="text-slate-200 text-2xl">Aya Rental</p>
       </a>
     </div>
-    <div class="flex gap-3">
-      <a class="text-xl" href="servicios">Sericios</a>
-      <a class="text-xl"  href="nosotros">Nosotros</a>
-      <a class="text-xl"  href="contacto">Contacto</a>
+    <div class="flex gap-3 text-slate-200 text-xl">
+      <a class="hover:text-blue-500" href="/servicios">Sercicios</a>
+      <a class="hover:text-blue-500" href="/nosotros">Nosotros</a>
+      <a class="hover:text-blue-500" href="/contacto">Contacto</a>
     </div>
-    <div class="flex gap-1 p-2 bg-gray-100 rounded-lg hover:bg-gray-200">
-      <LoginIcon />
-      Login
+    <div class="text-slate-200 px-2 py-1 bg-[#161618] rounded-lg border">
+      <a href="/login" class="flex gap-2">
+        <LoginIcon />
+        Login
+      </a>
     </div>
-  </header>
+  </nav>
 </Container>
