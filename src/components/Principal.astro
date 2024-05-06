@@ -1,8 +1,35 @@
 ---
 import Seguridad from "./sections/Seguridad.astro";
 import Container from "../layouts/Container.astro";
+import CardInfo from "./sections/CardInfo.astro";
+import SearchIcon from "../icons/SearchIcon.astro";
+import ClockIcon from "../icons/ClockIcon.astro"
+import CheckIcon from "../icons/CheckIcon.astro"
 ---
 
 <Container>
   <Seguridad />
+  <div class="flex flex-col md:flex-row justify-center">
+    <CardInfo
+      stilos="flex flex-col justify-center items-center text-center"
+      title="Encuentra el auto perfecto"
+      text="Registrate solo por una vez y explora los autos compartidos por anfitriones locales."
+    >
+      <SearchIcon />
+    </CardInfo>
+    <CardInfo
+      stilos="flex flex-col justify-center items-center text-center"
+      title="Elige y reserva"
+      text="Reserva la fecha y el auto que deseas. Saluda a tu anfitrión para coordinar la entrega de las llaves."
+    >
+      <ClockIcon />
+    </CardInfo>
+    <CardInfo
+      stilos="flex flex-col justify-center items-center text-center"
+      title="Disfruta tu viaje"
+      text="Un viaje se mide mejor en experiencias que en kilómetros"
+    >
+      <CheckIcon />
+    </CardInfo>
+  </div>
 </Container>
