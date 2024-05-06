@@ -1,0 +1,31 @@
+---
+import Container from "../../layouts/Container.astro";
+---
+
+<div class="full-screen">
+  <Container>
+    <section class="flex flex-col md:flex-row gap-10 justify-start items-center mt-20">
+      <article>
+        <img class="rounded-lg" src="secureVehicle.webp" alt="auto seguro" />
+      </article>
+      <article class="flex justify-start gap-5 flex-col">
+        <h4 class="text-5xl">Seguridad ante todo</h4>
+        <p class=" text-2xl">
+          Para brindarte tranquilidad, todos los alquileres están asegurados por
+          RIMAC, monitoreados por GPS y los viajeros pasan por un riguroso filtro de
+          seguridad.
+        </p>
+      </article>
+    </section>
+  </Container>
+</div>
+
+<style>
+  .full-screen {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+  }
+</style>

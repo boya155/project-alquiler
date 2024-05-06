@@ -1,0 +1,13 @@
+---
+interface Props {
+  palabra: string;
+  estilos: string;
+  url: string;
+}
+
+const { palabra, estilos, url } = Astro.props;
+---
+
+<a class={estilos} href={url}>
+  {palabra}
+</a>
