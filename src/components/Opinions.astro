@@ -1,0 +1,61 @@
+---
+import Container from "../layouts/Container.astro";
+import CardsOpinions from "./sections/CardsOpinions.astro";
+import Star from "../icons/Star.astro";
+---
+
+<div class="full-screen">
+  <h3 class="text-3xl text-center m-5 text-slate-900 uppercase font-semibold">
+    Lo que opinan nuestros clientes
+  </h3>
+  <section class="flex gap-10 flex-wrap justify-center mt-3">
+    <CardsOpinions
+      imgUrl="usuario2.webp"
+      text="¡Excelente servicio! Alquilé un auto por un viaje familiar y todo salió perfecto. El proceso de reserva en línea fue muy sencillo y el automóvil estaba impecable. La atención del personal también fue excepcional, muy amables y serviciales. Sin duda volveré a utilizar sus servicios en el futuro. ¡Muchas gracias!"
+      date="2024-08-08"
+      name="Maria Lopez"
+    >
+      <div class="flex">
+        <Star />
+        <Star />
+        <Star />
+      </div>
+    </CardsOpinions>
+    <CardsOpinions
+      imgUrl="usuario1.webp"
+      text="Renté un vehículo para un viaje de negocios y me encantó la experiencia. El auto era reciente, cómodo y con todas las funciones necesarias. Lo mejor fue la rapidez para recogerlo y entregarlo, en cuestión de minutos. Tarifas muy razonables también. Los recomiendo ampliamente, un servicio de primera calidad."
+      date="2024-08-08"
+      name="Pedro Martinez"
+    >
+      <div class="flex">
+        <Star />
+        <Star />
+        <Star />
+      </div>
+    </CardsOpinions>
+    <CardsOpinions
+      imgUrl="usuario3_1.webp"
+      text="Mi esposo y yo alquilamos un auto deportivo para pasar un fin de semana romántico y fue la mejor elección. El automóvil era increíble, con mucha potencia y manejo envidiable. El trato que recibimos fue sumamente profesional y amable. La empresa cuida todos los detalles para que la experiencia sea inmejorable. ¡Felicidades y muchas gracias!"
+      date="2024-08-08"
+      name="Pilar Mitma"
+    >
+      <div class="flex">
+        <Star />
+        <Star />
+        <Star />
+        <Star />
+        <Star />
+      </div>
+    </CardsOpinions>
+  </section>
+</div>
+
+<style>
+  .full-screen {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
