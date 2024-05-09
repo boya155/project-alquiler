@@ -1,0 +1,24 @@
+---
+interface Props {
+  imgUrl: string;
+  text: string;
+  name: string;
+  date: string;
+}
+
+const { imgUrl, text, name, date } = Astro.props;
+---
+
+<article class="flex flex-col p-5 bg-gray-50 gap-1 shadow-lg rounded-lg w-[250px] h-auto">
+  <div class="flex items-center">
+    <figure>
+      <img src={imgUrl} alt="logo users opinions" width="60px" />
+    </figure>
+    <div>
+      <p class="text-md text-gray-800 font-semibold">{name}</p>
+      <slot />
+    </div>
+  </div>
+  <div class="text-sm text-slate-700">{text}</div>
+  <p class="text-[10px] mt-3 text-gray-500 italic text-end">{date}</p>
+</article>

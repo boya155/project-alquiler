@@ -2,8 +2,23 @@
 import Layout from "../layouts/Layout.astro";
 import Banner from "../components/Banner.astro";
 import Principal from "../components/Principal.astro";
+import Opinions from "../components/Opinions.astro";
 ---
+
 <Layout title="Inicio - AYA RENTAL">
-    <Banner/>
-    <Principal/>
+  <Banner />
+  <div class="full-screen">
+    <Principal />
+  </div>
+  <Opinions />
 </Layout>
+
+<style>
+  .full-screen {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
