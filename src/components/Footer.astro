@@ -1,0 +1,36 @@
+---
+import MailIcon from "../icons/MailIcon.astro"
+---
+
+<footer class="flex flex-col gap-5 p-10 bg-[#1B1B1F] text-[#DFDFD6]">
+  <div class="flex flex-row justify-around ">
+    <div class="flex flex-col gap-3">
+      <h5 class="text-4xl font-semibold">AYA RENTAL</h5>
+      <a class="text-2xl" href="">Contactanos</a>
+      <a href="">+51 9999999999999</a>
+      <a href="">AyaRental FB</a>
+      <span class="inline-flex items-center">
+        <MailIcon class="inline-block cursor-pointer" />
+        <a href="mailto:ayarenatal.serv@gmail.com" class="inline-block ml-1">ayarenatal.serv@gmail.com</a>
+      </span>
+    </div>
+    <div class="flex flex-col">
+      <a href="" target="_blank">Politicas de cookies</a>
+      <a href="/servicios">Reservar</a>
+      <a href="">Politicas y condiciones</a>
+      <a href="">Intranet</a>
+    </div>
+    <div>
+      <form action="">
+        <div class="flex flex-col">
+          <p>Boletin informativo</p>
+          <label for="">Nombre</label>
+          <input type="text" name="nombre" />
+          <label for="">Email</label>
+          <input type="email" name="email" />
+        </div>
+      </form>
+    </div>
+  </div>
+  <p class="text-center">Aya Rental, Todos los derechos reservados</p>
+</footer>
