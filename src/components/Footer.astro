@@ -1,33 +1,57 @@
 ---
-import MailIcon from "../icons/MailIcon.astro"
+import MailIcon from "../icons/MailIcon.astro";
+import FacebookIcon from "../icons/FacebookIcon.astro";
+import CallIcon from "../icons/CallIcon.astro";
 ---
 
 <footer class="flex flex-col gap-5 p-10 bg-[#1B1B1F] text-[#DFDFD6]">
-  <div class="flex flex-row justify-around ">
+  <div class="flex flex-row justify-around flex-wrap gap-3">
     <div class="flex flex-col gap-3">
       <h5 class="text-4xl font-semibold">AYA RENTAL</h5>
-      <a class="text-2xl" href="">Contactanos</a>
-      <a href="">+51 9999999999999</a>
-      <a href="">AyaRental FB</a>
+      <p class="text-2xl">Contactanos</p>
+      <span class="inline-flex">
+        <CallIcon />
+        {"_"}
+        <a href="tel:+51992450988" class="hover:text-green-500"
+          >+51 9999999999999</a
+        >
+      </span>
       <span class="inline-flex items-center">
-        <MailIcon class="inline-block cursor-pointer" />
-        <a href="mailto:ayarenatal.serv@gmail.com" class="inline-block ml-1">ayarenatal.serv@gmail.com</a>
+        <FacebookIcon />{"_"}
+        <a
+          href="https://www.facebook.com/percy.condenunez.7"
+          class="hover:text-blue-500"
+          target="_blank">AyaRental FB</a
+        >
+      </span>
+      <span class="inline-flex items-center">
+        <MailIcon />{"_"}
+        <a
+          href="mailto:ayarenatal.serv@gmail.com"
+          class="hover:text-red-500"
+          target="_blank">ayarenatal.serv@gmail.com</a
+        >
       </span>
     </div>
-    <div class="flex flex-col">
-      <a href="" target="_blank">Politicas de cookies</a>
+    <div class="flex flex-col gap-3 items-start justify-center">
+      <a
+        href="https://www.pactomundial.org/politica-de-cookies/"
+        target="_blank">Politicas de cookies</a
+      >
       <a href="/servicios">Reservar</a>
-      <a href="">Politicas y condiciones</a>
-      <a href="">Intranet</a>
+      <a
+        href="https://www.google.com/intl/es/policies/terms/archive/20070416/"
+        target="_blank">Politicas y condiciones</a
+      >
+      <a href="/login">Intranet</a>
     </div>
     <div>
       <form action="">
-        <div class="flex flex-col">
-          <p>Boletin informativo</p>
-          <label for="">Nombre</label>
-          <input type="text" name="nombre" />
-          <label for="">Email</label>
-          <input type="email" name="email" />
+        <div class="flex flex-col gap-3 ">
+          <p class="font-semibold">Boletin informativo</p>
+          <input class="bg-[#DFDFD6] text-gray-900 rounded-lg" type="text" name="nombre" placeholder="Ingrese su nombre"/>
+          <input class="bg-[#DFDFD6] text-gray-900 rounded-lg" type="email" placeholder="Ingrese su email" name="email" />
+          <input class="bg-[#DFDFD6] text-gray-900 hover:bg-[#cfcfc9] p-3 font-semibold rounded-lg" type="submit" value="Enviar">
         </div>
       </form>
     </div>
