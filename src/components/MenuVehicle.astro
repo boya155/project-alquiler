@@ -1,0 +1,44 @@
+---
+import IconCar from "../icons/IconCar.astro";
+import IconCarLarge from "../icons/IconCarLarge.astro";
+import UpIcon from "../icons/UpIcon.astro";
+import BellowIcon from "../icons/BellowIcon.astro";
+---
+
+<div class="mt-16 md:mt-3 flex justify-center md:justify-end items-center p-3">
+  <ul class="menu bg-gray-100 menu-horizontal shadow-lg rounded-box">
+    <li>
+      <a class="text-gray-600">
+        <IconCar />
+        Autos
+        <span class="badge badge-sm">+22</span>
+      </a>
+    </li>
+    <li>
+      <a class="text-gray-600">
+        <IconCarLarge />
+        Camionetas
+        <span class="badge badge-sm">+30</span>
+      </a>
+    </li>
+    <li>
+      <a class="text-gray-600">
+        <UpIcon />
+        Precio mayor
+      </a>
+    </li>
+    <li>
+      <a class="text-gray-600">
+        <BellowIcon />
+        Precio menor
+      </a>
+    </li>
+    <li>
+      <input
+        type="text"
+        class="bg-gray-100 text-gray-700 grow input input-bordered input-sm w-full max-w-xs flex"
+        placeholder="Buscar vehiculo"
+      />
+    </li>
+  </ul>
+</div>
