@@ -1,0 +1,49 @@
+<!-- You can open the modal using ID.showModal() method -->
+<button
+  class="p-1 bg-gray-300 rounded text-gray-600 text-sm"
+  onclick="document.getElementById('details_vehicle').showModal()"
+  >Ver más</button
+>
+<dialog id="details_vehicle" class="modal">
+  <div class="modal-box bg-gray-100">
+    <button
+      class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+      onclick="this.closest('dialog').close(); return false;">✕</button
+    >
+    <form method="dialog "></form>
+    <h3 class="font-bold text-lg text-slate-700">Ford Mustang</h3>
+    <h5 class="text-gray-800 font-semibold">Caracteristicas del vehiculo</h5>
+    <div class="flex justify-between mb-3">
+      <ul class="text-gray-700">
+        <li><span class="text-orange-300 text-2xl">.</span> Automatica</li>
+        <li><span class="text-orange-300 text-2xl">.</span> Gasolina</li>
+        <li><span class="text-orange-300 text-2xl">.</span> 5 puertas</li>
+        <li><span class="text-orange-300 text-2xl">.</span> MP3 / USB / BT</li>
+      </ul>
+      <ul class="text-gray-700">
+        <li><span class="text-orange-300 text-2xl">.</span> 5 Pasajeros</li>
+        <li><span class="text-orange-300 text-2xl">.</span> 75 km/galón</li>
+        <li><span class="text-orange-300 text-2xl">.</span> Aire acond.</li>
+      </ul>
+    </div>
+    <figure class="mb-3">
+      <img
+        class="rounded-lg"
+        src="https://www.topgear.com/sites/default/files/2023/07/24Mustang_Media_drive%20LA_23.jpg"
+        alt="Shoes"
+      />
+    </figure>
+    <div class="flex justify-stretch items-center gap-3 flex-wrap">
+      <p
+        class="cursor-pointer text-red-500 p-2 bg-red-200 text-center hover:bg-red-300 transition-all rounded-lg text-sm"
+      >
+        Desde: 310/<span class="text-accent">dia</span>
+      </p>
+      <a
+        href="#"
+        class="p-2 bg-emerald-200 hover:bg-emerald-300 text-emerald-700 rounded-lg text-sm"
+        >Reservar ahora</a
+      >
+    </div>
+  </div>
+</dialog>

@@ -1,4 +1,7 @@
-<div class="card w-96 bg-gray-100 shadow-xl mt-5 mb-5">
+---
+import CarInfoModal from "./CarInfoModal.astro"
+---
+<div class="card w-96 bg-gray-100 border border-dashed shadow-lg mt-3 mb-3">
   <figure>
     <img
       src="https://www.topgear.com/sites/default/files/2023/07/24Mustang_Media_drive%20LA_23.jpg"
@@ -17,13 +20,10 @@
       Desde: S/310<span class="text-sm text-primary font-bold">/dia</span>
     </p>
     <div class="card-actions">
-      <button
-        class="px-3 py-2 rounded rounded-r-lg hover:bg-gray-300 bg-gray-200 text-gray-700 text-[13px]"
-        >ver más</button
-      >
+      <CarInfoModal/>
     </div>
     <div class="card-actions justify-end">
-      <button class="btn btn-accent">Quiero reservar</button>
+      <button class="btn btn-accent">Quiero Reservar</button>
     </div>
   </div>
 </div>

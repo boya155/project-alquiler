@@ -3,14 +3,15 @@ import Layout from "../layouts/Layout.astro";
 import MenuVehicle from "../components/MenuVehicle.astro";
 import CardsVehicle from "../components/CardsVehicle.astro";
 ---
+
 <Layout title="Conoce nuestros vehiculos">
-   <MenuVehicle/> 
-   <div class="flex flex-col md:flex-row flex-wrap justify-around p-3">
-      <CardsVehicle/>
-      <CardsVehicle/>
-      <CardsVehicle/>
-      <CardsVehicle/>
-      <CardsVehicle/>
-      <CardsVehicle/>
-   </div>
+  <MenuVehicle />
+  <div class="flex justify-around gap-2 flex-wrap p-2">
+    <CardsVehicle />
+    <CardsVehicle />
+    <CardsVehicle />
+    <CardsVehicle />
+    <CardsVehicle />
+    <CardsVehicle />
+  </div>
 </Layout>
