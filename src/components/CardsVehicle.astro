@@ -1,0 +1,29 @@
+---
+import CarInfoModal from "./CarInfoModal.astro"
+---
+<div class="card w-96 bg-gray-100 border border-dashed shadow-lg mt-3 mb-3">
+  <figure>
+    <img
+      src="https://www.topgear.com/sites/default/files/2023/07/24Mustang_Media_drive%20LA_23.jpg"
+      alt="Shoes"
+    />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title text-gray-700">Ford Mustang</h2>
+    <span class="badge badge-sm badge-accent text-gray-700">Disponible</span>
+    <p class="text-gray-600 text-sm mb-2">
+      Experimenta la emoción al volante de un icónico Ford Mustang. Disfruta de
+      su potente motor y su diseño deportivo durante tus aventuras por la
+      ciudad.
+    </p>
+    <p class="text-gray-800">
+      Desde: S/310<span class="text-sm text-primary font-bold">/dia</span>
+    </p>
+    <div class="card-actions">
+      <CarInfoModal/>
+    </div>
+    <div class="card-actions justify-end">
+      <button class="btn btn-accent">Quiero Reservar</button>
+    </div>
+  </div>
+</div>

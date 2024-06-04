@@ -1,0 +1,52 @@
+---
+import LoginImg from "../../public/loginImg.astro";
+---
+<div class="full-screen">
+  <div class="flex flex-col-reverse gap-3 md:flex-row justify-center items-center p-2">
+    <figure>
+      <LoginImg />
+    </figure>
+    <div>
+      <form action="" method="get">
+        <div class="flex flex-col gap-3">
+          <h3 class="text-gray-600 font-bold text-2xl px-3 drop-shadow-lg">
+            Iniciar sessión
+          </h3>
+          <label for="">
+            <input
+              class="input bg-slate-100"
+              type="text"
+              name=""
+              id=""
+              placeholder="Username"
+              required
+            />
+          </label>
+          <label for="">
+            <input
+              class="input bg-slate-100"
+              type="password"
+              name=""
+              id=""
+              placeholder="Password"
+              required
+            />
+          </label>
+          <button
+            class="px-4 py-3 bg-blue-300 shadow-xl text-white font-bold rounded-lg hover:bg-blue-400"
+            type="submit">Iniciar</button
+          >
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<style>
+  .full-screen {
+    min-height: 89vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>

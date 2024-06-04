@@ -1,9 +1,17 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import MenuVehicle from "../components/MenuVehicle.astro";
+import CardsVehicle from "../components/CardsVehicle.astro";
 ---
-<Layout title="vehiculos">
 
-    <h2>Servicios</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis error, minima pariatur accusamus ipsum repellendus eum aperiam, eos dolorum dolore quisquam sed consectetur, optio tenetur ex ad officia recusandae saepe?</p>
-
+<Layout title="Conoce nuestros vehiculos">
+  <MenuVehicle />
+  <div class="flex justify-around gap-2 flex-wrap p-2">
+    <CardsVehicle />
+    <CardsVehicle />
+    <CardsVehicle />
+    <CardsVehicle />
+    <CardsVehicle />
+    <CardsVehicle />
+  </div>
 </Layout>
